@@ -1,11 +1,9 @@
 :root {
   --light: #f7f7f7;
   --dark: #1a1a1a;
-  --med: #808080;
-
+  --secondary: #494949;
   --foreground: var(--dark);
   --background: var(--light);
-
   --fontStack: "IBM Plex Mono", "Input Mono", "SF Mono", Consolas, monospace;
 }
 
@@ -21,7 +19,6 @@ html {
   background-color: var(--background);
   color: var(--foreground);
   display: flex;
-  font-size: 150%;
   height: 100%;
   line-height: 1.75;
   transition-property: background-color, color;
@@ -33,11 +30,12 @@ html {
   :root {
     --foreground: var(--light);
     --background: var(--dark);
+    --secondary: #909090;
   }
 }
 
 body {
-  --column-width: 80ch;
+  --column-width: 90ch;
   display: flex;
   flex-direction: column;
   flex: 0 1 var(--column-width);
@@ -47,36 +45,16 @@ body {
   padding-bottom: 0;
   text-align: center;
 }
-
-.greeting {
+.line {
   font-family: var(--fontStack);
-  font-size: 26px;
+  font-size: 225%;
   margin-bottom: 0.75rem;
   z-index: 1;
 }
 .meaning {
-    color: var(--med);
-    background-image: linear-gradient(var(--background), transparent);
-    content: "";
-    height: 1.5rem;
-    left: 0;
-    margin-top: 0.75rem;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-
-
-}
-
-.greeting::after {
-  background-image: linear-gradient(var(--background), transparent);
-  content: "";
-  height: 3rem;
-  left: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 170%;
+  color: var(--secondary);
+  letter-spacing: 0.25px;
   margin-top: 0.75rem;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: 100%;
 }

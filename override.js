@@ -1,15 +1,12 @@
-// L U  C   I    D
+// Sikh Tab
 // Amarpreet singh's code
-// He also happened to write this ode
-// To focus, clarity, rest, and joy
-// Which, I hope, you find in this toy
+// This is just 4 lines of code, but have big impact on sikh community.
 
-import GURBANI from '/gurbani.js';
+import JAPJISAHIB from '/gurbani.js';
 
-const random = Math.floor(Math.random() * GURBANI.length);
-
-document.getElementById("greeting").innerText = GURBANI[random].line;
-document.getElementById("meaning").innerText = GURBANI[random].meaning;
+const random = Math.floor(Math.random() * JAPJISAHIB.length);
+document.getElementById("line").innerText = JAPJISAHIB[random].line;
+document.getElementById("meaning").innerText = JAPJISAHIB[random].meaning;
 
 
 
