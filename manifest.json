@@ -1,0 +1,16 @@
+{
+  "name": "Sikh Tab",
+  "version": "1.0",
+  "description": "Replace your new tab page with gurbani inspiration.",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "images/sikh-icon-16.png",
+    "32": "images/sikh-icon-32.png",
+    "48": "images/sikh-icon-48.png",
+    "128": "images/sikh-icon-128.png"
+  },
+  "manifest_version": 2,
+  "chrome_url_overrides": {
+    "newtab": "override.html"
+  }
+}
